@@ -1,0 +1,281 @@
+/*estilos generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Open Sans', Verdana;
+}
+/*
+html, body{
+    overflow: hidden;
+}
+*/
+body{
+    background: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.container{
+    width: 85%;
+    margin:0px auto;
+}
+
+/*CABECERA*/
+
+#main-header{
+    background: white;
+    height: 100px;
+    line-height: 85px;
+}
+
+#logo{
+    width: 63%;
+    float: left;    
+}
+#logo h1{
+    font-weight: bold;
+    font-size: 25px;
+    color: #fb314e;
+}
+
+#menu{
+    width: 380px;
+    float: left;
+}
+
+#menu ul li{
+    list-style: none;
+    float: left;
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+}
+
+#menu ul li a{
+    color:black;
+}
+
+#menu ul li a:hover{
+    color:#fb314e;
+}
+
+/*Slider*/
+#slider{
+    height: 300px;
+    background: #fb314e;
+}
+
+#slider h2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 290px;
+    text-shadow: 0px 0px 8px black;
+}
+
+/*Servicios*/
+.subheader{
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(251, 49, 78, 0.3);
+}
+
+.service, .video{
+   width: 33%;
+   text-align: center;
+   float: left;
+   margin-top: 20px;
+   margin-bottom: 20px; 
+}
+
+.service img{
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.service h3{
+    margin-bottom: 10px;
+}
+
+.service p, .video p{
+    color: #444;
+    text-align: center;
+    display: block;
+    width: 85%;
+    margin: 0px auto;
+}
+
+
+/*Videos*/
+
+.video iframe{
+width: 80%;
+height: 170px;
+}
+
+/*FOOTER*/
+
+#footer{
+background: #333;
+padding-top: 5px;
+padding-bottom: 40px;
+margin-top: 30px;
+text-align: center;
+color: white;
+}
+
+#footer .subheader{
+    color: white;
+}
+
+#networks{
+    display: block;
+    width: 290px;
+    margin: 0px auto;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+#networks li{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 300ms;
+}
+
+#networks li:hover{
+    opacity: 0.8;
+    transform: scale(1.1, 1.1);
+}
+
+/*MEDIA QUERY
+@media all and (min-width: 1000px){
+
+    #main-header{
+        background: black;
+    }
+
+}
+*/
+
+@media(max-width: 1225px){
+    .container{
+        width: 95%;
+    }
+}
+
+@media(max-width: 1085px){
+
+    #main-header{
+        height: 70px;
+        line-height: 65px;
+    }
+    
+    #logo{
+        width: 60%;
+    }
+}
+
+@media (max-width: 999px){
+
+       #logo{
+           width: 283px;
+           float: none;
+           margin: 0px auto;
+       }
+   
+       #menu{
+           float: none;
+           margin: 0px auto;
+       }
+       #slider{
+           overflow: hidden; /*Para lo que se salga del slider se oculte*/
+           height: 150px;
+        }
+       #slider h2{
+           font-size: 30px;
+           line-height: 0px;
+           margin-top: 60px;
+       }
+}
+
+@media (max-width: 780px){
+    .service, .video{
+        width: 70%;        
+        float: none;
+        margin: 0px auto; /*esto csirve para centrar el contenido*/
+        margin-top: 20px;
+        margin-bottom: 40px; 
+    }
+
+    .service p{
+        width: 50%;
+        text-align: justify;
+    }
+
+    .service p, .video p{
+       margin-top: 10px;
+    }
+
+    .video iframe{
+        width: 80%;
+        height: 230px;
+    }
+}
+
+@media (max-width: 576px){
+   
+    #slider h2{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 377px){
+    #menu{
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu ul li {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #slider h2{
+        margin-top: 50px;
+    }
+
+    .service, .video{
+        width: 90%;           
+    }
+
+    .video iframe{
+        width: 80%;
+        height: 140px;
+    }
+}
+
+@media (max-width: 345px){
+    
+    #main-header{
+        height: auto;
+    }
+
+    #menu ul li {
+        float: none;
+    }
+
+}
